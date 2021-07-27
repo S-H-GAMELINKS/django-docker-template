@@ -1,7 +1,7 @@
 ## DjangoのDockerテンプレート
 ### これはなに？
 
-PythonのWebフレームワークである`Django`をDockerを使い環境を構築できるテンプレートです。
+PythonのWebフレームワークである`Django`をDockerを使い環境を構築できるテンプレートです。  
 基本的には[Docker公式に記載されているもの](https://docs.docker.jp/compose/django.html)を参考にしています。
 
 ### 使い方
@@ -36,7 +36,7 @@ docker-compose build
 
 #### Djangoのアプリを作成
 
-`docker-compose run web django-admin startproject <アプリ名> .`とターミナルで実行して`Django`のアプリを作成します。
+`docker-compose run web django-admin startproject <アプリ名> .`とターミナルで実行して`Django`のアプリを作成します。  
 アプリ名の部分には`helloworld`や`blog`のようにアプリの名前に置き換えましょう。
 
 ```bash
@@ -47,7 +47,7 @@ docker-compose run web django-admin startproject <アプリ名> .
 
 アプリが作成されると`django-docker-template`ディレクトリ内にしていしたアプリの名前のディレクトリが作成されていると思います。(ex: `helloworld`や`blog`など)
 
-その作成されているアプリのソースコードを編集できるように`sudo chown -R $USER:$USER .`を実行します。
+その作成されているアプリのソースコードを編集できるように`sudo chown -R $USER:$USER .`を実行します。  
 Windowsの場合はWSLを使って実行しましょう。
 
 ```bash
@@ -98,8 +98,8 @@ docker-compose up
 
 ## 参考
 
-ref: [クィックスタート: Compose と Django](https://docs.docker.jp/compose/django.html)
-ref: [django クイックインストールガイド](https://docs.djangoproject.com/ja/3.2/intro/install/)
+ref: [クィックスタート: Compose と Django](https://docs.docker.jp/compose/django.html)  
+ref: [django クイックインストールガイド](https://docs.djangoproject.com/ja/3.2/intro/install/)  
 ref: [django.db.utils.OperationalError: fe_sendauth: no password supplied
-](https://stackoverflow.com/questions/36214127/django-db-utils-operationalerror-fe-sendauth-no-password-supplied)
+](https://stackoverflow.com/questions/36214127/django-db-utils-operationalerror-fe-sendauth-no-password-supplied)  
 
